@@ -1,0 +1,25 @@
+<!-- Two-Way Binding -->
+<br />
+<p>
+  Enter Book Name:
+  <!-- Property Binding -->
+  <input [type]="inputType" [(ngModel)]="inp" />
+</p>
+<!-- InterPolation -->
+<p>Book You Entered: {{ inp }}</p>
+
+<button (click)="addBook()">Add Book</button>
+<br />
+<button (click)="showList()">Show List</button>
+<br />
+<button (click)="hideList()">Hide List</button>
+<br />
+<div *ngIf="show">
+  <!-- Attribute Binding -->
+  <p [ngStyle]="{ fontSize: '20px', fontWeight: '500' }">
+    The BookList You Entered:
+  </p>
+  <ul>
+    <li *ngFor="let book of books">{{ book }}</li>
+  </ul>
+</div>
