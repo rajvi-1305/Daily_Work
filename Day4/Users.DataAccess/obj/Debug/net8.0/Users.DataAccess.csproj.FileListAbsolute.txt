@@ -1,0 +1,15 @@
+G:\TatvaSoft\Daily_Work\Day4\Users.DataAccess\bin\Debug\net8.0\Users.DataAccess.deps.json
+G:\TatvaSoft\Daily_Work\Day4\Users.DataAccess\bin\Debug\net8.0\Users.DataAccess.runtimeconfig.json
+G:\TatvaSoft\Daily_Work\Day4\Users.DataAccess\bin\Debug\net8.0\Users.DataAccess.dll
+G:\TatvaSoft\Daily_Work\Day4\Users.DataAccess\bin\Debug\net8.0\Users.DataAccess.pdb
+G:\TatvaSoft\Daily_Work\Day4\Users.DataAccess\obj\Debug\net8.0\Users.DataAccess.csproj.AssemblyReference.cache
+G:\TatvaSoft\Daily_Work\Day4\Users.DataAccess\obj\Debug\net8.0\Users.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+G:\TatvaSoft\Daily_Work\Day4\Users.DataAccess\obj\Debug\net8.0\Users.DataAccess.AssemblyInfoInputs.cache
+G:\TatvaSoft\Daily_Work\Day4\Users.DataAccess\obj\Debug\net8.0\Users.DataAccess.AssemblyInfo.cs
+G:\TatvaSoft\Daily_Work\Day4\Users.DataAccess\obj\Debug\net8.0\Users.DataAccess.csproj.CoreCompileInputs.cache
+G:\TatvaSoft\Daily_Work\Day4\Users.DataAccess\obj\Debug\net8.0\Users.DataAccess.sourcelink.json
+G:\TatvaSoft\Daily_Work\Day4\Users.DataAccess\obj\Debug\net8.0\Users.DataAccess.dll
+G:\TatvaSoft\Daily_Work\Day4\Users.DataAccess\obj\Debug\net8.0\refint\Users.DataAccess.dll
+G:\TatvaSoft\Daily_Work\Day4\Users.DataAccess\obj\Debug\net8.0\Users.DataAccess.pdb
+G:\TatvaSoft\Daily_Work\Day4\Users.DataAccess\obj\Debug\net8.0\Users.DataAccess.genruntimeconfig.cache
+G:\TatvaSoft\Daily_Work\Day4\Users.DataAccess\obj\Debug\net8.0\ref\Users.DataAccess.dll

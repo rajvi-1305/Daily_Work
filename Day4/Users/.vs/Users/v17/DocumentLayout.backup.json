@@ -1,0 +1,193 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\TatvaSoft\\Daily_Work\\Day4\\Users\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4F28981C-7FEE-4DE5-8543-454B83D219C4}|..\\Users.DataAccess\\Users.DataAccess.csproj|g:\\tatvasoft\\daily_work\\day4\\users.dataaccess\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58075CE4-F9BB-416B-8050-D9C93112F94E}|..\\Users.Services\\Users.Services.csproj|g:\\tatvasoft\\daily_work\\day4\\users.services\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F161ED59-5261-4743-A944-8E2FAD18F93C}|Users.csproj|g:\\tatvasoft\\daily_work\\day4\\users\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F161ED59-5261-4743-A944-8E2FAD18F93C}|Users.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F28981C-7FEE-4DE5-8543-454B83D219C4}|..\\Users.DataAccess\\Users.DataAccess.csproj|g:\\tatvasoft\\daily_work\\day4\\users.dataaccess\\userdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F161ED59-5261-4743-A944-8E2FAD18F93C}|Users.csproj|g:\\tatvasoft\\daily_work\\day4\\users\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F161ED59-5261-4743-A944-8E2FAD18F93C}|Users.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\TatvaSoft\\Daily_Work\\Day4\\Users.DataAccess\\Migrations\\20250529080356_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F28981C-7FEE-4DE5-8543-454B83D219C4}|..\\Users.DataAccess\\Users.DataAccess.csproj|g:\\tatvasoft\\daily_work\\day4\\users.dataaccess\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "G:\\TatvaSoft\\Daily_Work\\Day4\\Users\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "G:\\TatvaSoft\\Daily_Work\\Day4\\Users\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAqwDMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T07:14:50.01Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "G:\\TatvaSoft\\Daily_Work\\Day4\\Users.DataAccess\\Models\\User.cs",
+              "RelativeDocumentMoniker": "..\\Users.DataAccess\\Models\\User.cs",
+              "ToolTip": "G:\\TatvaSoft\\Daily_Work\\Day4\\Users.DataAccess\\Models\\User.cs",
+              "RelativeToolTip": "..\\Users.DataAccess\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T07:29:31.139Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserDbContext.cs",
+              "DocumentMoniker": "G:\\TatvaSoft\\Daily_Work\\Day4\\Users.DataAccess\\UserDbContext.cs",
+              "RelativeDocumentMoniker": "..\\Users.DataAccess\\UserDbContext.cs",
+              "ToolTip": "G:\\TatvaSoft\\Daily_Work\\Day4\\Users.DataAccess\\UserDbContext.cs",
+              "RelativeToolTip": "..\\Users.DataAccess\\UserDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T07:32:48.68Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20250529080356_InitialMigration.cs",
+              "DocumentMoniker": "G:\\TatvaSoft\\Daily_Work\\Day4\\Users.DataAccess\\Migrations\\20250529080356_InitialMigration.cs",
+              "RelativeDocumentMoniker": "..\\Users.DataAccess\\Migrations\\20250529080356_InitialMigration.cs",
+              "ToolTip": "G:\\TatvaSoft\\Daily_Work\\Day4\\Users.DataAccess\\Migrations\\20250529080356_InitialMigration.cs",
+              "RelativeToolTip": "..\\Users.DataAccess\\Migrations\\20250529080356_InitialMigration.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T08:03:56.498Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "G:\\TatvaSoft\\Daily_Work\\Day4\\Users.DataAccess\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "..\\Users.DataAccess\\Repositories\\UserRepository.cs",
+              "ToolTip": "G:\\TatvaSoft\\Daily_Work\\Day4\\Users.DataAccess\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "..\\Users.DataAccess\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T08:22:56.858Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "G:\\TatvaSoft\\Daily_Work\\Day4\\Users.Services\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "..\\Users.Services\\Services\\UserService.cs",
+              "ToolTip": "G:\\TatvaSoft\\Daily_Work\\Day4\\Users.Services\\Services\\UserService.cs",
+              "RelativeToolTip": "..\\Users.Services\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T08:27:24.81Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\TatvaSoft\\Daily_Work\\Day4\\Users\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "G:\\TatvaSoft\\Daily_Work\\Day4\\Users\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T08:28:30.92Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:8:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
