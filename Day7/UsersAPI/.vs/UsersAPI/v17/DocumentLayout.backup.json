@@ -1,0 +1,230 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\TatvaSoft\\Work\\Day7\\UsersAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1AA66AA8-87AB-42E1-91B3-604C8A6A8438}|..\\UsersAPI.Data\\UsersAPI.Data.csproj|g:\\tatvasoft\\work\\day7\\usersapi.data\\models\\missionskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{899EDF14-7721-4151-92AA-3F6632EA6BFA}|..\\UsersAPI.Entities\\UsersAPI.Entities.csproj|g:\\tatvasoft\\work\\day7\\usersapi.entities\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0841BD0-A075-4EBF-AD80-9A343C9E6EDD}|UsersAPI.csproj|g:\\tatvasoft\\work\\day7\\usersapi\\controllers\\missionskillcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0841BD0-A075-4EBF-AD80-9A343C9E6EDD}|UsersAPI.csproj|solutionrelative:controllers\\missionskillcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1FD9EC8-511D-4A56-BA0D-4917B2A59B85}|..\\UsersAPI.Services\\UsersAPI.Services.csproj|g:\\tatvasoft\\work\\day7\\usersapi.services\\services\\interface\\imissionskillservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0841BD0-A075-4EBF-AD80-9A343C9E6EDD}|UsersAPI.csproj|g:\\tatvasoft\\work\\day7\\usersapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E0841BD0-A075-4EBF-AD80-9A343C9E6EDD}|UsersAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{899EDF14-7721-4151-92AA-3F6632EA6BFA}|..\\UsersAPI.Entities\\UsersAPI.Entities.csproj|g:\\tatvasoft\\work\\day7\\usersapi.entities\\repositories\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{899EDF14-7721-4151-92AA-3F6632EA6BFA}|..\\UsersAPI.Entities\\UsersAPI.Entities.csproj|g:\\tatvasoft\\work\\day7\\usersapi.entities\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1FD9EC8-511D-4A56-BA0D-4917B2A59B85}|..\\UsersAPI.Services\\UsersAPI.Services.csproj|g:\\tatvasoft\\work\\day7\\usersapi.services\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1FD9EC8-511D-4A56-BA0D-4917B2A59B85}|..\\UsersAPI.Services\\UsersAPI.Services.csproj|g:\\tatvasoft\\work\\day7\\usersapi.services\\services\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0841BD0-A075-4EBF-AD80-9A343C9E6EDD}|UsersAPI.csproj|g:\\tatvasoft\\work\\day7\\usersapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0841BD0-A075-4EBF-AD80-9A343C9E6EDD}|UsersAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MissionSkill.cs",
+              "DocumentMoniker": "G:\\TatvaSoft\\Work\\Day7\\UsersAPI.Data\\Models\\MissionSkill.cs",
+              "RelativeDocumentMoniker": "..\\UsersAPI.Data\\Models\\MissionSkill.cs",
+              "ToolTip": "G:\\TatvaSoft\\Work\\Day7\\UsersAPI.Data\\Models\\MissionSkill.cs*",
+              "RelativeToolTip": "..\\UsersAPI.Data\\Models\\MissionSkill.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T08:19:14.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "G:\\TatvaSoft\\Work\\Day7\\UsersAPI.Entities\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "..\\UsersAPI.Entities\\Entities\\User.cs",
+              "ToolTip": "G:\\TatvaSoft\\Work\\Day7\\UsersAPI.Entities\\Entities\\User.cs",
+              "RelativeToolTip": "..\\UsersAPI.Entities\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T08:18:29.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:8:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IMissionSKillService.cs",
+              "DocumentMoniker": "G:\\TatvaSoft\\Work\\Day7\\UsersAPI.Services\\Services\\Interface\\IMissionSKillService.cs",
+              "RelativeDocumentMoniker": "..\\UsersAPI.Services\\Services\\Interface\\IMissionSKillService.cs",
+              "ToolTip": "G:\\TatvaSoft\\Work\\Day7\\UsersAPI.Services\\Services\\Interface\\IMissionSKillService.cs",
+              "RelativeToolTip": "..\\UsersAPI.Services\\Services\\Interface\\IMissionSKillService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T08:15:33.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MissionSkillController.cs",
+              "DocumentMoniker": "G:\\TatvaSoft\\Work\\Day7\\UsersAPI\\Controllers\\MissionSkillController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MissionSkillController.cs",
+              "ToolTip": "G:\\TatvaSoft\\Work\\Day7\\UsersAPI\\Controllers\\MissionSkillController.cs*",
+              "RelativeToolTip": "Controllers\\MissionSkillController.cs*",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T08:14:17.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "G:\\TatvaSoft\\Work\\Day7\\UsersAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "G:\\TatvaSoft\\Work\\Day7\\UsersAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-03T18:43:33.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\TatvaSoft\\Work\\Day7\\UsersAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "G:\\TatvaSoft\\Work\\Day7\\UsersAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAQwCoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T08:28:00.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "G:\\TatvaSoft\\Work\\Day7\\UsersAPI.Services\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "..\\UsersAPI.Services\\Services\\UserService.cs",
+              "ToolTip": "G:\\TatvaSoft\\Work\\Day7\\UsersAPI.Services\\Services\\UserService.cs",
+              "RelativeToolTip": "..\\UsersAPI.Services\\Services\\UserService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T06:18:52.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "G:\\TatvaSoft\\Work\\Day7\\UsersAPI.Entities\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "..\\UsersAPI.Entities\\Repositories\\UserRepository.cs",
+              "ToolTip": "G:\\TatvaSoft\\Work\\Day7\\UsersAPI.Entities\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "..\\UsersAPI.Entities\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAqwBQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T06:19:18.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "G:\\TatvaSoft\\Work\\Day7\\UsersAPI.Services\\Services\\Interface\\IUserService.cs",
+              "RelativeDocumentMoniker": "..\\UsersAPI.Services\\Services\\Interface\\IUserService.cs",
+              "ToolTip": "G:\\TatvaSoft\\Work\\Day7\\UsersAPI.Services\\Services\\Interface\\IUserService.cs",
+              "RelativeToolTip": "..\\UsersAPI.Services\\Services\\Interface\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T06:18:40.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "G:\\TatvaSoft\\Work\\Day7\\UsersAPI.Entities\\Repositories\\Interface\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "..\\UsersAPI.Entities\\Repositories\\Interface\\IUserRepository.cs",
+              "ToolTip": "G:\\TatvaSoft\\Work\\Day7\\UsersAPI.Entities\\Repositories\\Interface\\IUserRepository.cs",
+              "RelativeToolTip": "..\\UsersAPI.Entities\\Repositories\\Interface\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T06:19:07.711Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

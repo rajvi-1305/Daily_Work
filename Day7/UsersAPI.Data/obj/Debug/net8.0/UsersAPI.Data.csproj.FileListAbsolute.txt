@@ -1,0 +1,15 @@
+G:\TatvaSoft\Work\Day7\UsersAPI.Data\bin\Debug\net8.0\UsersAPI.Data.deps.json
+G:\TatvaSoft\Work\Day7\UsersAPI.Data\bin\Debug\net8.0\UsersAPI.Data.runtimeconfig.json
+G:\TatvaSoft\Work\Day7\UsersAPI.Data\bin\Debug\net8.0\UsersAPI.Data.dll
+G:\TatvaSoft\Work\Day7\UsersAPI.Data\bin\Debug\net8.0\UsersAPI.Data.pdb
+G:\TatvaSoft\Work\Day7\UsersAPI.Data\obj\Debug\net8.0\UsersAPI.Data.csproj.AssemblyReference.cache
+G:\TatvaSoft\Work\Day7\UsersAPI.Data\obj\Debug\net8.0\UsersAPI.Data.GeneratedMSBuildEditorConfig.editorconfig
+G:\TatvaSoft\Work\Day7\UsersAPI.Data\obj\Debug\net8.0\UsersAPI.Data.AssemblyInfoInputs.cache
+G:\TatvaSoft\Work\Day7\UsersAPI.Data\obj\Debug\net8.0\UsersAPI.Data.AssemblyInfo.cs
+G:\TatvaSoft\Work\Day7\UsersAPI.Data\obj\Debug\net8.0\UsersAPI.Data.csproj.CoreCompileInputs.cache
+G:\TatvaSoft\Work\Day7\UsersAPI.Data\obj\Debug\net8.0\UsersAPI.Data.sourcelink.json
+G:\TatvaSoft\Work\Day7\UsersAPI.Data\obj\Debug\net8.0\UsersAPI.Data.dll
+G:\TatvaSoft\Work\Day7\UsersAPI.Data\obj\Debug\net8.0\refint\UsersAPI.Data.dll
+G:\TatvaSoft\Work\Day7\UsersAPI.Data\obj\Debug\net8.0\UsersAPI.Data.pdb
+G:\TatvaSoft\Work\Day7\UsersAPI.Data\obj\Debug\net8.0\UsersAPI.Data.genruntimeconfig.cache
+G:\TatvaSoft\Work\Day7\UsersAPI.Data\obj\Debug\net8.0\ref\UsersAPI.Data.dll
