@@ -1,5 +1,7 @@
-﻿using Mission.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using Mission.Entities;
 using Mission.Entities.Context;
+using Mission.Entities.Entities;
 using Mission.Entities.Models;
 using Mission.Repositories.IRepositories;
 using System;
@@ -62,6 +64,101 @@ namespace Mission.Repositories
             await _cIDbContext.User.AddAsync(user);
             _cIDbContext.SaveChanges();
             return "User Added!";
+        }
+
+
+        public UserResponseModel LoginUserDetailById(int id)
+        {
+            var userDetail = _cIDbContext.User
+                .Where(u => u.Id == id && !u.IsDeleted)
+                .Select(user => new UserResponseModel()
+                {
+                    Id = user.Id,
+                    FirstName = user.FirstName,
+                    LastName = user.LastName,
+                    PhoneNumber = user.PhoneNumber,
+                    EmailAddress = user.EmailAddress,
+                    UserType = user.UserType,
+                })
+                .FirstOrDefault() ?? throw new Exception("User not found.");
+
+            return userDetail;
+        }
+
+        public async Task<bool> LoginUserProfileUpdate(AddUserDetailsRequestModel requestModel)
+        {
+            try
+            {
+                var user = _cIDbContext.User.Where(x => x.Id == requestModel.UserId).FirstOrDefault();
+
+                if (user == null) throw new Exception("Not Found!");
+
+                var userDetails = _cIDbContext.UserDetails.Where(x => x.UserId == requestModel.UserId).FirstOrDefault();
+
+                if (userDetails == null)
+                {
+                    // Add User Details
+                    UserDetail userDetail = new UserDetail()
+                    {
+                        UserId = requestModel.UserId,
+                        Availability = requestModel.Avilability,
+                        CityId = requestModel.CityId,
+                        CountryId = requestModel.CountryId,
+                        Department = requestModel.Department,
+                        EmployeeId = requestModel.EmployeeId,
+                        LinkedInUrl = requestModel.LinkdInUrl,
+                        Manager = requestModel.Manager,
+                        MyProfile = requestModel.MyProfile,
+                        MySkills = requestModel.MySkills,
+                        Surname = requestModel.Surname,
+                        Name = requestModel.Name,
+                        UserImage = requestModel.UserImage,
+                        WhyIVolunteer = requestModel.WhyIVolunteer,
+                        Status = requestModel.Status,
+                        Title = requestModel.Title,
+
+                        IsDeleted = false,
+                        CreatedDate = DateTime.Now,
+                    };
+
+                    await _cIDbContext.UserDetails.AddAsync(userDetail);
+                }
+                else
+                {
+                    // Update User Details
+                    userDetails.UserId = requestModel.UserId;
+                    userDetails.Availability = requestModel.Avilability;
+                    userDetails.CityId = requestModel.CityId;
+                    userDetails.CountryId = requestModel.CountryId;
+                    userDetails.Department = requestModel.Department;
+                    userDetails.EmployeeId = requestModel.EmployeeId;
+                    userDetails.LinkedInUrl = requestModel.LinkdInUrl;
+                    userDetails.Manager = requestModel.Manager;
+                    userDetails.MyProfile = requestModel.MyProfile;
+                    userDetails.MySkills = requestModel.MySkills;
+                    userDetails.Surname = requestModel.Surname;
+                    userDetails.Name = requestModel.Name;
+                    userDetails.UserImage = requestModel.UserImage;
+                    userDetails.WhyIVolunteer = requestModel.WhyIVolunteer;
+                    userDetails.Status = requestModel.Status;
+                    userDetails.Title = requestModel.Title;
+
+                    userDetails.ModifiedDate = DateTime.Now;
+
+                    _cIDbContext.UserDetails.Update(userDetails);
+                }
+
+                user.FirstName = requestModel.Name;
+                user.LastName = requestModel.Surname;
+
+                _cIDbContext.User.Update(user);
+                await _cIDbContext.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
     }
 }

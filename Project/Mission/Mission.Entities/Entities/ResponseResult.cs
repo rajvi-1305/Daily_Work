@@ -15,6 +15,6 @@ namespace Mission.Entities
     public enum ResponseStatus
     {
         Error,
-        Success
+        Success,
     }
 }

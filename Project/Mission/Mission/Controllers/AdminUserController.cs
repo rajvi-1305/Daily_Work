@@ -24,19 +24,24 @@ namespace Mission.Controllers
             }
         }
 
-        [HttpDelete]
-        [Route("DeleteUser")]
-        public ActionResult DeleteUser([FromQuery] int id)
+        [HttpDelete("DeleteUser/{id:int}")]
+        public ActionResult DeleteUser([FromRoute] int id)
         {
             try
             {
                 var res = _adminUserService.UserDelete(id);
                 return Ok(new ResponseResult() { Data = res, Result = ResponseStatus.Success, Message = "" });
             }
-            catch
+            catch (Exception ex)
             {
-                return BadRequest(new ResponseResult() { Data = null, Result = ResponseStatus.Error, Message = "Failed to delete user" });
+                return BadRequest(new ResponseResult
+                {
+                    Data = null,
+                    Result = ResponseStatus.Error,
+                    Message = $"Failed to delete user: {ex.Message}"
+                });
             }
+
         }
 
     }

@@ -6,6 +6,12 @@ using Mission.Repositories;
 using Mission.Services.IServices;
 using Mission.Services;
 using Microsoft.EntityFrameworkCore;
+using Mission.Repositories.Repositories;
+using Mission.Services.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,10 +20,36 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<MissionDbContext>(db => db.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddCors(cors => cors.AddPolicy("MyPolicy", builder =>
+builder.Services.AddCors(options =>
 {
-    builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
-}));
+    options.AddPolicy("MyPolicy",
+    policy =>
+    {
+        policy.WithOrigins("http://localhost:4200")
+                .AllowAnyMethod()
+                .AllowAnyHeader();
+    });
+});
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = "localhost",
+        ValidAudience = "localhost",
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JwtConfig:Key"]!)),
+        ClockSkew = TimeSpan.Zero
+    };
+});
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -31,6 +63,20 @@ builder.Services.AddScoped<IAdminUserRepository, AdminUserRepository>();
 builder.Services.AddScoped<ILoginRepository, LoginRepository>();
 builder.Services.AddScoped<ILoginService, LoginService>();
 
+builder.Services.AddScoped<IMissionSkillRepository, MissionSkillRepository>();
+builder.Services.AddScoped<IMissionSkillService, MissionSkillService>();
+
+builder.Services.AddScoped<IMissionThemeRepository, MissionThemeRepository>();
+builder.Services.AddScoped<IMissionThemeService, MissionThemeService>();
+
+builder.Services.AddScoped<ICommonService, CommonService>();
+builder.Services.AddScoped<ICommonRepository, CommonRepository>();
+
+builder.Services.AddScoped<IMissionService, MissionService>();
+builder.Services.AddScoped<IMissionRepository, MissionRepository>();
+
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -39,6 +85,14 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(
+        Path.Combine(Directory.GetCurrentDirectory(), "UploadMissionImage")),
+    RequestPath = "/UploadedImage"
+});
+
 
 app.UseHttpsRedirection();
 app.UseCors("MyPolicy");

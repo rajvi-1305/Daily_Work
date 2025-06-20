@@ -5,6 +5,8 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Mission.Entities.Entities;
+using System.Collections;
 
 namespace Mission.Entities
 {
@@ -35,5 +37,16 @@ namespace Mission.Entities
 
         [Column("user_image")]
         public string UserImage { get; set; } = string.Empty;
+
+        [Column("is_deleted")]
+        public bool IsDeleted { get; set; } = false;
+        public virtual UserDetail UserDetail { get; set; }
+        public virtual ICollection<MissionApplication> MissionApplications{get; set; } = [];
+        public virtual ICollection<MissionComment> MissionComments { get; set; }=[];
+        public virtual ICollection<MissionFavourites> MissionFavourites { get; set; } = [];
+        public virtual ICollection<MissionRating> MissionRatings { get; set; } = [];
+        public virtual ICollection<Story> Stories { get; set; } = [];
+        public virtual ICollection<VolunteeringHours> VolunteeringHours {get; set;}= [];
+        public virtual ICollection<VolunteeringGoals> VolunteeringGoals {get; set;}= []; 
     }
 }

@@ -73,6 +73,12 @@
                 <div class="col-sm-6">
                   <label class="col-form-label">Mission Theme</label>
                   <select class="form-select" formControlName="missionThemeId">
+                    <!-- <option
+                      *ngFor="let item of missionThemeList"
+                      [value]="item.value"
+                    >
+                      {{ item.text }}
+                    </option> -->
                     <option
                       *ngFor="let item of missionThemeList"
                       value="{{ item.value }}"
@@ -80,6 +86,7 @@
                       {{ item.text }}
                     </option>
                   </select>
+
                   <span
                     class="text-danger"
                     *ngIf="
@@ -170,6 +177,7 @@
                           (click)="selectImage.click()"
                           style="cursor: pointer"
                         />
+                        <!--  -->
                         <input
                           type="file"
                           class="form-control"
@@ -179,10 +187,31 @@
                           formControlName="missionImages"
                           (change)="onSelectedImage($event)"
                         />
+                        <!-- <div
+                          style="
+                            display: flex;
+                            gap: 10px;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                          "
+                        >
+                          <img
+                            *ngFor="let img of imageListArray"
+                            [src]="img"
+                            alt="Preview"
+                            style="
+                              width: 100px;
+                              height: 100px;
+                              object-fit: cover;
+                              border: 1px solid #ccc;
+                              border-radius: 8px;
+                            "
+                          />
+                        </div> -->
                       </div>
                     </div>
                   </div>
-                  <span
+                  <!-- <span
                     class="text-danger"
                     *ngIf="
                       missionImages.invalid &&
@@ -190,6 +219,12 @@
                     "
                   >
                     Please Select Image
+                  </span> -->
+                  <span
+                    class="text-danger"
+                    *ngIf="imageListArray.length === 0 && formValid"
+                  >
+                    Please select at least one image.
                   </span>
                 </div>
                 <div class="col-sm-6">
@@ -201,7 +236,7 @@
                   >
                     <option
                       *ngFor="let item of missionSkillList"
-                      value="{{ item.value }}"
+                      [value]="item.value"
                     >
                       {{ item.text }}
                     </option>

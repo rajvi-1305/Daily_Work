@@ -109,7 +109,20 @@ export class AuthService {
     if (this.userPayLoad) return this.userPayLoad.fullName;
   }
 
-  public getUserDetail() {
-    if (this.userPayLoad) return this.userPayLoad;
+  // public getUserDetail() {
+  //   if (this.userPayLoad) return this.userPayLoad;
+  // }
+
+  getUserDetail() {
+    const token = localStorage.getItem('access_Token');
+    if (!token) return null;
+
+    try {
+      const payload = JSON.parse(atob(token.split('.')[1]));
+      return payload;
+    } catch (e) {
+      console.error('Invalid token format:', e);
+      return null;
+    }
   }
 }

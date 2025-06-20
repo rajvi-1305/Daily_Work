@@ -32,17 +32,39 @@ export class HeaderComponent implements OnInit, OnDestroy {
       this.data = dateFormat(now, 'dddd mmmm dS,yyyy, h:MM:ss TT');
     }, 1);
   }
+  // ngOnInit(): void {
+  //   const user = this._service.getUserDetail();
+  //   this.loginUserDetailByUserId(user.userId);
+  //   const userSubscription = this._service
+  //     .getCurrentUser()
+  //     .subscribe((data: any) => {
+  //       const userName = this._service.getUserFullName();
+  //       data == null
+  //         ? (this.userDetail = userName)
+  //         : (this.userDetail = data.fullName);
+  //     });
+  //   this.unsubscribe.push(userSubscription);
+  // }
+
   ngOnInit(): void {
     const user = this._service.getUserDetail();
-    this.loginUserDetailByUserId(user.userId);
+
+    if (user && user.userId) {
+      this.loginUserDetailByUserId(user.userId);
+    } else {
+      console.warn('User detail is not available. Possibly not logged in.');
+      // Optionally redirect to login
+      this._router.navigate(['/login']);
+      return;
+    }
+
     const userSubscription = this._service
       .getCurrentUser()
       .subscribe((data: any) => {
         const userName = this._service.getUserFullName();
-        data == null
-          ? (this.userDetail = userName)
-          : (this.userDetail = data.fullName);
+        this.userDetail = data == null ? userName : data.fullName;
       });
+
     this.unsubscribe.push(userSubscription);
   }
 

@@ -10,6 +10,7 @@ using Mission.Repositories.IRepositories;
 using Mission.Entities;
 using Mission.Entities.Models;
 using Mission.Repositories.Helpers;
+using Mission.Repositories.Repositories;
 
 namespace Mission.Services
 {
@@ -47,6 +48,15 @@ namespace Mission.Services
             return _loginRepository.Register(model);
         }
 
+        public UserResponseModel LoginUserDetailById(int id)
+        {
+            return _loginRepository.LoginUserDetailById(id);
+        }
+
+        public async Task<bool> LoginUserProfileUpdate(AddUserDetailsRequestModel requestModel)
+        {
+            return await _loginRepository.LoginUserProfileUpdate(requestModel);
+        }
 
     }
 }

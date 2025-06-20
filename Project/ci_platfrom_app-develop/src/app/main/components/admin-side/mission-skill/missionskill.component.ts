@@ -14,9 +14,19 @@ declare var window: any;
 @Component({
   selector: 'app-missionskill',
   standalone: true,
-  imports: [SidebarComponent, HeaderComponent, FormsModule, RouterModule, NgxPaginationModule, NgStyle, NgIf, FilterPipe, NgFor],
+  imports: [
+    SidebarComponent,
+    HeaderComponent,
+    FormsModule,
+    RouterModule,
+    NgxPaginationModule,
+    NgStyle,
+    NgIf,
+    FilterPipe,
+    NgFor,
+  ],
   templateUrl: './missionskill.component.html',
-  styleUrls: ['./missionskill.component.css']
+  styleUrls: ['./missionskill.component.css'],
 })
 export class MissionskillComponent implements OnInit, OnDestroy {
   missionSkillList: any[] = [];
@@ -26,12 +36,12 @@ export class MissionskillComponent implements OnInit, OnDestroy {
   searchText: any;
   skillId: any;
   private unsubscribe: Subscription[] = [];
-  
+
   constructor(
-    private _service: MissionService, 
-    private _route: Router, 
+    private _service: MissionService,
+    private _route: Router,
     private _toast: NgToastService
-  ) { }
+  ) {}
 
   ngOnInit(): void {
     this.getMissionSkillList();
@@ -40,14 +50,25 @@ export class MissionskillComponent implements OnInit, OnDestroy {
     );
   }
   getMissionSkillList() {
-    const missionSkillList = this._service.missionSkillList().subscribe((data: any) => {
-      if (data.result == 1) {
-        this.missionSkillList = data.data;
-      }
-      else {
-        this._toast.error({ detail: "ERROR", summary: data.message, duration: APP_CONFIG.toastDuration });
-      }
-    }, err => this._toast.error({ detail: "ERROR", summary: err.message, duration: APP_CONFIG.toastDuration }));
+    const missionSkillList = this._service.missionSkillList().subscribe(
+      (data: any) => {
+        if (data.result == 1) {
+          this.missionSkillList = data.data;
+        } else {
+          this._toast.error({
+            detail: 'ERROR',
+            summary: data.message,
+            duration: APP_CONFIG.toastDuration,
+          });
+        }
+      },
+      (err) =>
+        this._toast.error({
+          detail: 'ERROR',
+          summary: err.message,
+          duration: APP_CONFIG.toastDuration,
+        })
+    );
     this.unsubscribe.push(missionSkillList);
   }
 
@@ -59,18 +80,39 @@ export class MissionskillComponent implements OnInit, OnDestroy {
     this.deleteSkillmodal.hide();
   }
   deleteSkillModal() {
-    const deleteMissionSkillSubscribe = this._service.deleteMissionSkill(this.skillId).subscribe((data: any) => {
-      if (data.result == 1) {
-        this._toast.success({ detail: "SUCCESS", summary: data.data, duration: APP_CONFIG.toastDuration });
-        this.closeDeleteSkillModal();
-        setTimeout(() => {
-          this._route.navigate(['admin/missionSkill']);
-        }, 1000);
-      }
-      else {
-        this._toast.error({ detail: "ERROR", summary: data.message, duration: APP_CONFIG.toastDuration });
-      }
-    }, err => this._toast.error({ detail: "ERROR", summary: err.message, duration: APP_CONFIG.toastDuration }));
+    const deleteMissionSkillSubscribe = this._service
+      .deleteMissionSkill(this.skillId)
+      .subscribe(
+        (data: any) => {
+          if (data.result == 1) {
+            this._toast.success({
+              detail: 'SUCCESS',
+              summary: data.data,
+              duration: APP_CONFIG.toastDuration,
+            });
+            this.missionSkillList = this.missionSkillList.filter(
+              (skill) => skill.id !== this.skillId
+            );
+
+            this.closeDeleteSkillModal();
+            setTimeout(() => {
+              this._route.navigate(['admin/missionSkill']);
+            }, 1000);
+          } else {
+            this._toast.error({
+              detail: 'ERROR',
+              summary: data.message,
+              duration: APP_CONFIG.toastDuration,
+            });
+          }
+        },
+        (err) =>
+          this._toast.error({
+            detail: 'ERROR',
+            summary: err.message,
+            duration: APP_CONFIG.toastDuration,
+          })
+      );
     this.unsubscribe.push(deleteMissionSkillSubscribe);
   }
   ngOnDestroy() {

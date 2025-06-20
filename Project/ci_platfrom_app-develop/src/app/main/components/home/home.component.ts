@@ -258,14 +258,22 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   applyMission() {
+    // const value = {
+    //   missionId: this.missionData.id,
+    //   userId: +this.loginUserId,
+    //   // appliedDate: moment().format('yyyy-MM-DDTHH:mm:ssZ'),
+    //   appliedDate: format(new Date(), 'yyyy-MM-ddTHH:mm:ssXXX'),
+    //   status: false,
+    //   sheet: 1,
+    // };
     const value = {
       missionId: this.missionData.id,
-      userId: this.loginUserId,
-      // appliedDate: moment().format('yyyy-MM-DDTHH:mm:ssZ'),
-      appliedDate: format(new Date(), 'yyyy-MM-DDTHH:mm:ssZ'),
+      userId: +this.loginUserId,
+      appliedDate: new Date().toISOString(),
       status: false,
       sheet: 1,
     };
+
     const applyMissionSubscribe = this._service.applyMission(value).subscribe(
       (data: any) => {
         if (data.result == 1) {

@@ -14,5 +14,10 @@ namespace Mission.Services.IServices
 
         LoginUserResponseModel UserLogin(LoginUserRequestModel model);
         Task<string> Register(RegisterUserModel model);
+
+        //Task<LoginUserResponseModel?> GetLoginUserDetailById(int userId);
+
+        UserResponseModel LoginUserDetailById(int id);
+        Task<bool> LoginUserProfileUpdate(AddUserDetailsRequestModel requestModel);
     }
 }

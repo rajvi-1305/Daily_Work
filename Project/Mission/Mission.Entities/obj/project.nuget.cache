@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UaCfqo3W31g=",
+  "dgSpecHash": "EX814VvSbp4=",
   "success": true,
-  "projectFilePath": "G:\\TatvaSoft\\Daily_Work\\Project\\Mission\\Mission.Entities\\Mission.Entities.csproj",
+  "projectFilePath": "P:\\Extra\\Project\\Mission\\Mission.Entities\\Mission.Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
@@ -49,5 +49,12 @@
     "C:\\Users\\Admin\\.nuget\\packages\\system.text.json\\9.0.5\\system.text.json.9.0.5.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
+    }
+  ]
 }
